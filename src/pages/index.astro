@@ -1,0 +1,74 @@
+---
+import Card from "../components/Card.astro";
+import CardLight from "../components/CardLight.astro";
+import Header from "../components/Header.astro";
+---
+
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+  </head>
+  <body>
+    <Header />
+    <main class="container max-w-7xl px-4 mx-auto mb-10">
+      <div
+        class="flex w-full mt-9 justify-between flex-row-reverse items-center"
+      >
+        <img src="/image/Asset 1.png" class="h-[500px] w-[550px]" />
+        <div>
+          <h1 class="text-5xl font-black font-sans">
+            Building Solutions to <br /> Empower Indie Hackers
+          </h1>
+        </div>
+      </div>
+      <div class="h-10"></div>
+      <p class="font-black text-[43px] text-center mb-10">Our Products</p>
+      <div class="w-full grid grid-cols-2 gap-4">
+        <Card
+          title="IndieHacks"
+          subtitle="Discover Indie Version of Popular SaaS Products"
+          image="/image/circle 1.png"
+        />
+        <Card
+          title="The Indie Press"
+          subtitle="Get a weekly update on the Indie world - straight to your inbox."
+          image="/image/tip.png"
+        />
+        <CardLight
+          cls="card card-side border-2 bg-white hover:border-[#f87171] hover:border-2"
+          bt="btn bg-[#f87171] border-0"
+          title="Notion Commerce"
+          subtitle="Build & Manage eCommerce Right From Notion"
+          image="/image/n1.png"
+        />
+        <CardLight
+          cls="card card-side border-2 bg-white hover:border-[#706ce7] hover:border-2"
+          bt="btn bg-[#706ce7] border-0"
+          title="Formming"
+          subtitle="No-Code Form Builder For Devs"
+          image="/image/f1.jpeg"
+        />
+      </div>
+      <div class="h-10"></div>
+      <p class="font-black text-[43px] text-center mb-10">Contact Us</p>
+      <div class="flex w-full justify-center">
+        <div>
+          <h2 class="text-4xl lg:text-5xl font-bold leading-tight">
+            Lets talk about everything!
+          </h2>
+          <div class="text-gray-700 mt-8">
+            Hate forms? Send us an <span class="underline">email</span> instead.
+          </div>
+        </div>
+        <iframe
+          src="https://app.formming.com/f/21"
+          height="500px"
+          style="border:none; width:100%;"></iframe>
+      </div>
+    </main>
+  </body>
+</html>

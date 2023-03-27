@@ -1,0 +1,18 @@
+---
+const { title, subtitle, image, link, cls, bt } = Astro.props;
+---
+
+<div class={cls}>
+  <figure>
+    <img src={image} class="h-[210px] w-[200px] object-contain p-10" alt="Movie" />
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title font-bold text-xl">
+      {title}
+    </h2>
+    <p class="text-base">{subtitle}</p>
+    <div class="card-actions justify-end">
+      <button class={bt}>Visit Now</button>
+    </div>
+  </div>
+</div>
