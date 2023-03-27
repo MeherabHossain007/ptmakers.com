@@ -12,8 +12,8 @@ const { title, subtitle, image, link } = Astro.props;
     </h2>
     <p class="text-base dark:text-white">{subtitle}</p>
     <div class="card-actions justify-end">
-      <button class="btn bg-fuchsia-500 border-0"
-        >Visit Now</button
+      <a class="btn bg-fuchsia-500 border-0" href={link}
+        >Visit Now</a
       >
     </div>
   </div>
